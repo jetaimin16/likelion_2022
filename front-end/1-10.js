@@ -11,8 +11,8 @@ console.log(student1[3]);
 // 객체로 구현시?
 let student2 = {
     koreanScore:90,
-    englishScore:70,
-    "mathScore":80,  // 문자열로 적어도 ok
+    englishScore:70, 
+    "mathScore":80,  // 문자열로 적어도 ok -> 공백 사용 가능
     "scienceScore":60
 }; // 세미콜론 생략하는 경우가 많음
 
