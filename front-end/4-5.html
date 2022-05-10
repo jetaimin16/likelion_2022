@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>S
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">Alert 박스</p>
+        <button id="close">X</button>
+    </div>
+
+    <button onclick="알림창('아이디입력', 'block')">버튼1</button>
+    <button onclick="알림창('비번입력', 'block')">버튼2</button>
+
+    <script>
+
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('close').style.display = 'none' ;
+        }); // HTML에 onclick없이 자바스크립트에서 구현
+        
+        function 알림창(a, b){
+            document.getElementById('title').innerHTML = a;
+            document.getElementsByClassName('alert-box')[0].style.display = b;
+        }
+         
+    </script>
+</body>
+</html>

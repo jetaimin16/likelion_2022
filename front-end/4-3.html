@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>S
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">Alert 박스
+        <button onclick="알림창닫기()">닫기</button>
+    </div>
+    <button onclick="알림창열기()">버튼</button>
+    <script>
+        
+        function 알림창열기(){
+            document.getElementById('alert').style.display = 'block';
+        } // 긴 코드 축약
+
+        function 알림창닫기(){
+            document.getElementById('alert').style.display = 'none';
+        }
+         
+    </script>
+</body>
+</html>

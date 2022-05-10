@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>S
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h4 id="test" class="test1">안녕하세요</h4>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script> <!--일반적으로 body 끝나기 전에 작성-->
+
+    <script>
+        $("#text").html('안녕');
+        // == document.getElementById('test').innierHTML = '안녕';
+        // == $("#text").text('안녕');
+        $("#text").css('color', 'red');
+        $("#text").attr('src', 'dsddd.jpg');
+    </script>
+
+</body>
+</html>
