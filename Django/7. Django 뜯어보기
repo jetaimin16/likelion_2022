@@ -1,0 +1,22 @@
+<Step 10, 11, 12>
+파일 내부의 코드를 알 필요는 X
+1. __init__.py: 패키지의 위치를 알려줌
+2. urls.py: url 등록 및 관리
+  ex) www.codelion.net, www.codelion.net/login, www.codelion.net/payment/1...(계층적)
+3. manage.py
+    1) 서버 켜기: python manage.py runserver -> http 포트 번호 입력
+    2) Application 생성: 특정 기능 app(프로젝트의 단위) 생성
+        - app 생성: python manage.py startapp dashboard(app name) -> dashboard 파일 생성
+        - app 등록: setting.py의 INSTALLED_APP에 dashboard 등록
+        - app file의 models에는 DB와 상호작용, views는 동작 논리 입력
+    3) DB 초기화 및 변경사항 반영: python manage.py migrate
+    4) 관리자 계정 생성: python manage.py createsuperuser
+        - http 포트/admin으로 접속시 관리자 계정으로 로그인 -> 관리자 페이지로 이동
+4. setting.py
+    1) BASE_DIR: manage.py 파일의 위치
+    2) SECRET_KEY: 해시생성 문자열
+    3) DEBUG = True/False: 개발자 모드/배포용 서버 중 결정
+    4) INSTALLED_APP: 어플리케이션/외부 패키지 저장
+    5) DATABASES: 실제 DB와 연결해주는 plug. 사용할 database : 위치...
+    6) Internationalization: 언어, 시간... 설정
+    7) STATIC_URL: 미리 준비한 정적 파일(html, css) 위치 저장

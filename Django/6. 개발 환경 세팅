@@ -1,0 +1,15 @@
+<Step 8>
+가상 환경: 독립적인 개발환경 만들기(파이썬 내장 기능)
+- Django 패키지가 전체 범위에 영향을 미치지 않도록 설정
+- 여러 프로젝트 수행시 가상 환경 필요 - 프로젝트가 영향을 미칠 수 있는 범위 축소
+
+1. 생성: "python -m venv 가상환경이름"
+2. 실행: source myvenv/Scripts/activate -> (가상환경이름)
+3. 끄기: deactivate
+
+< 실습 >
+1. 생성: python -m venv myvenv
+2. 실행: source myvenv/Scripts/activate
+3. Django 설치: pip install Django - pip freeze로 설치 확인
+4. Django 프로젝트 생성: django-admin startproject myproject
+5. 가상환경 종료: deactivate
