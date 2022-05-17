@@ -1,0 +1,6 @@
+<Step 7>
+MVC(보편적)/MTV(Django 내 명칭): Django의 디자인 패턴
+MVC(Model View Controller)/MTV(Model Template View)
+1. DB와 상호작용하는 부분(Model)
+2. 사용자들 눈에 보이는 부분(View)
+3. 내부 동작의 논리를 담당하는 부분(Controller)
